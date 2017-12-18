@@ -1,0 +1,47 @@
+
+public class Shirt 
+{
+	public Shirt(int aCollarSize, int aSleeveLength)
+	{
+		
+		collarSize = aCollarSize;
+		
+		sleeveLength = aSleeveLength;
+		
+		Material = "cotton";
+		
+	}
+	
+	public Shirt(int aCollarSize, int aSleeveLength, String aMaterial)
+	{
+		
+		collarSize = aCollarSize;
+		
+		sleeveLength = aSleeveLength;
+		
+		Material = aMaterial;
+		
+	}
+	
+	public int getCollarSize()
+	{
+		return collarSize;
+	}
+	
+	public int getSleeveLength()
+	{
+		return sleeveLength;
+	}
+	
+	public String getMaterial()
+	{
+		return Material;
+	}
+	
+	private int collarSize;
+	
+	private int sleeveLength;
+	
+	private String Material;
+	
+}

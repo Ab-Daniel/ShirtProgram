@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class ShirtTest 
+{
+	
+	public static void main(String[] args) 
+	{
+		
+		Scanner console = new Scanner(System.in);
+		System.out.println("Testing the first constructor.");
+		System.out.println("Enter the collar size: ");
+		int collarSize1stCon = console.nextInt();
+		System.out.println("Enter the sleeve length: ");
+		int sleeveLength1stCon = console.nextInt();
+		
+		Shirt shirt1 = new Shirt(collarSize1stCon, sleeveLength1stCon);
+		
+		System.out.println("Collar size : " + shirt1.getCollarSize());
+		System.out.println("Sleeve length : " + shirt1.getSleeveLength());
+		System.out.println("Material : " + shirt1.getMaterial());
+		
+		System.out.println("Testing the second constructor.");
+		System.out.println("Enter the collar size: ");
+		int collarSize2ndCon = console.nextInt();
+		System.out.println("Enter the sleeve length: ");
+		int sleeveLengthSize2ndCon = console.nextInt();
+		System.out.println("Enter the material: ");
+		String material2ndCon = console.next();
+		
+		Shirt shirt2 = new Shirt(collarSize2ndCon, sleeveLengthSize2ndCon, material2ndCon);
+		
+		System.out.println("Collar size : " + shirt2.getCollarSize());
+		System.out.println("Sleeve length : " + shirt2.getSleeveLength());
+		System.out.println("Material : " + shirt2.getMaterial());
+		
+	}
+
+}
